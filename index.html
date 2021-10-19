@@ -15,23 +15,55 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="dist/css/lightbox.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
 </head>
 
 <body>
+    <button class="up">
+        <i class="fas fa-arrow-circle-up"></i>
+    </button>
     <div class="wrapper">
-        <nav>
-            <h1 class="title">Konrad Rejentowicz</h1>
-        </nav>
-        <div class="header">
-            <div class="welcome">
-                <h2>Cześć,</h2>
-                <br>
-                <h2>tu Konrad!</h2>
-                <a href="https://www.instagram.com/konradrejentowicz/" target="_blank">
-                    sprawdź mój instagram
-                    <i class="fab fa-instagram ig"></i>
-                </a>
+        <div class="header-wrap">
+            <button class="burger">
+                <div class="burger-box">
+                    <div class="burger-inner">
+                    </div>
+                </div>
+            </button>
+            <nav>
+                <div class="me1 me">
+                    <a href="#">
+                        O mnie
+                    </a>
+                </div>
+                <div class="me2 me">
+                    <a href="#">
+                        Realizacje
+                    </a>
+                </div>
+                <div class="me3 me">
+                    <a href="#">
+                        Projekty
+                    </a>
+                </div>
+                <div class="me4 me">
+                    <a href="#">
+                        Kontakt
+                    </a>
+                </div>
+            </nav>
+            <div class="header">
+                <div class="welcome">
+                    <h2>Cześć,</h2>
+                    <br>
+                    <h2>tu Konrad!</h2>
+                    <a href="https://www.instagram.com/konradrejentowicz/" target="_blank">
+                        sprawdź mój instagram
+                        <i class="fab fa-instagram ig"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -55,50 +87,156 @@
         </section>
     </div>
     <div class="photos">
-        <h2>Moje realizacje</h2>
-        <section class="gallery">
-            <div class="img">
-                <div class="bgc">
-                    <p>Miejska dżungla</p>
+        <div class="photos-wrap">
+            <h2>Moje realizacje</h2>
+            <section class="gallery">
+                <div class="img-wrap">
+                    <div class="img">
+                        <div class="bgc">
+                            <a href="/img/max/1max.jpg" class="imgFull" data-lightbox="roadtrip">
+                                <p>Miasto</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="img">
-                <div class="bgc">
-                    <p>Odwaga</p>
+
+                <div class="img-wrap">
+                    <div class="img">
+                        <div class="bgc">
+                            <a href="/img/max/2max.jpg" class="imgFull" data-lightbox="roadtrip">
+                                <p>Odwaga</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="img">
-                <div class="bgc">
-                    <p>Metro</p>
+
+                <div class="img-wrap">
+                    <div class="img">
+                        <div class="bgc">
+                            <a href="/img/max/3max.jpg" class="imgFull" data-lightbox="roadtrip">
+                                <p>Metro</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="img">
-                <div class="bgc">
-                    <p>Taxi</p>
+                <div class="img-wrap">
+                    <div class="img">
+                        <div class="bgc">
+                            <a href="/img/max/4max.jpg" class="imgFull" data-lightbox="roadtrip">
+                                <p>Taxi</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+                <div class="img-wrap">
+                    <div class="img">
+                        <div class="bgc">
+                            <a href="/img/max/5max.jpg" class="imgFull" data-lightbox="roadtrip">
+                                <p>Patriota</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-wrap">
+                    <div class="img">
+                        <div class="bgc">
+                            <a href="/img/max/6max.jpg" class="imgFull" data-lightbox="roadtrip">
+                                <p>Brooklyn</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-wrap">
+                    <div class="img">
+                        <div class="bgc">
+                            <a href="/img/max/7max.jpg" class="imgFull" data-lightbox="roadtrip">
+                                <p>Jenga</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-wrap">
+                    <div class="img">
+                        <div class="bgc">
+                            <a href="/img/max/8max.jpg" class="imgFull" data-lightbox="roadtrip">
+                                <p>Liberty</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="projects">
+        <div class="projects-wrap">
+            <h2>Moje projekty</h2>
+            <section class="sectionProjects">
+                <div class="project">
+                    <div class="projectBgc">
+                    </div>
+                    <p>Canva bgc</p>
+                </div>
+                <div class="project">
+                    <div class="projectBgc">
+                    </div>
+                    <p>Siema</p>
+                </div>
+                <div class="project">
+                    <div class="projectBgc">
+                    </div>
+                    <p>Siema</p>
+                </div>
+                <div class="project">
+                    <div class="projectBgc">
+                    </div>
+                    <p>Siema</p>
+                </div>
+                <div class="project">
+                    <div class="projectBgc">
+                    </div>
+                    <p>Siema</p>
+                </div>
+                <div class="project">
+                    <div class="projectBgc">
+                    </div>
+                    <p>Siema</p>
+                </div>
+            </section>
+        </div>
     </div>
     <div class="contact">
-        <h2>Kontakt</h2>
-        <div class="con">
-            <input type="text" name="mail" placeholder="Twój email" class="mail">
-            <textarea name="text" placeholder="w czym mogę Ci pomóc?" class="text"></textarea>
-            <button class="submit">Wyślij</button>
-            <div class="phone">
-                <i class="fas fa-phone-alt"></i>
-                <p>+48 513 855 456</p>
+        <div class="contact-wrap">
+            <h2>Kontakt</h2>
+            <div class="con">
+                <input type="text" name="mail" placeholder="Twój email" class="mail">
+                <textarea name="text" placeholder="w czym mogę Ci pomóc?" class="text"></textarea>
+                <button class="submit">Wyślij</button>
+                <div class="phone">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>+48 513 855 456</p>
+                </div>
             </div>
         </div>
     </div>
     <footer>
-        <p>Rejentowicz &copy; Wszelkie prawa zastrzeżone </p>
-        <br>
-        <section class="icons">
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook-f"></i>
-        </section>
+        <div class="footer-wrap">
+            <p>Rejentowicz &copy; Wszelkie prawa zastrzeżone </p>
+            <!-- <br> -->
+            <section class="icons">
+                <a href="https://www.instagram.com/konradrejentowicz/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/konrad.rejentowicz" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </section>
+        </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="dist/js/lightbox.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
