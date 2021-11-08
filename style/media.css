@@ -353,7 +353,6 @@
     }
 
     .projectBgc {
-        position: absolute;
         top: 50%;
         left: 100%;
         transform: translateY(-50%);
@@ -364,8 +363,8 @@
         transition: transform .1s, height .2s .1s;
     }
 
-    .project:nth-child(odd) {
-        background-color: transparent;
+    a:nth-child(even) .projectBgc {
+        background-color: #F7CB15;
     }
 
     .project:hover .projectBgc {
