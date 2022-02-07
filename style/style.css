@@ -265,6 +265,8 @@ nav.active {
     display: inline-block;
     max-width: 80vw;
     margin: 0 auto;
+
+    font-size: 3.2rem;
 }
 
 .gallery {
