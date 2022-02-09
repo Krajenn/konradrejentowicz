@@ -24,6 +24,11 @@ header {
     padding: 20px 40px;
 }
 
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
 .slider {
     height: 80vh;
     width: 100vw;
