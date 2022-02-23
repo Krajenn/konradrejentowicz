@@ -411,6 +411,14 @@ a:nth-child(even) .projectBgc {
     justify-content: space-around;
 }
 
+.con form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 90%;
+}
+
 input {
     border: none;
 }
@@ -508,6 +516,7 @@ footer p {
 .icons {
     font-size: 2rem;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     flex-grow: 1;
 }

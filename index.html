@@ -209,9 +209,14 @@
             <div class="contact-wrap">
                 <h2>Kontakt</h2>
                 <div class="con">
-                    <input type="text" name="mail" placeholder="Twój email" class="mail">
-                    <textarea name="text" placeholder="w czym mogę Ci pomóc?" class="text"></textarea>
-                    <button class="submit">Wyślij</button>
+                    <form id="contactform" action="https://formsubmit.io/send/has37@wp.pl" method="POST">
+                        <input type="mail" name="mail" placeholder="Twój email" class="mail">
+                        <textarea name="text" placeholder="w czym mogę Ci pomóc?" class="text"></textarea>
+                        <button class="submit">Wyślij</button>
+
+                        <input name="_redirect" type="hidden" id="name" value="https://index.html">
+
+                    </form>
                     <div class="phone">
                         <i class="fas fa-phone-alt"></i>
                         <p>+48 513 855 456</p>
@@ -228,9 +233,9 @@
                 <a href="https://www.instagram.com/konradrejentowicz/" target="_blank">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://www.facebook.com/konrad.rejentowicz" target="_blank">
+                <!-- <a href="https://www.facebook.com/konrad.rejentowicz" target="_blank">
                     <i class="fab fa-facebook-f"></i>
-                </a>
+                </a> -->
             </section>
         </div>
     </footer>
