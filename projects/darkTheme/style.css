@@ -1,3 +1,8 @@
+:root{
+    --color-bg: #fff;
+    --color-main: #000;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,10 +10,8 @@
 }
 
 body {
-    background: #fff;
-    color: #000;
-    background: #fff;
-    color: #000;
+    background: var(--color-bg);
+    color: var(--color-main);
     display: flex;
     flex-wrap: wrap;
     font-family: Helvetica, sans-serif;
@@ -61,12 +64,13 @@ header button {
     height: 60px;
     margin: 16px 25px;
     position: relative;
+    transition: background-color 0.3s, transform 0.3s;
     width: 60px;
 }
 
 span {
     bottom: 100%;
-    color: #000;
+    color: var(--color-main);
     font-size: 20px;
     left: 50%;
     padding: 12px 0;
@@ -88,11 +92,11 @@ p {
 }
 
 main button {
-    background: #000;
+    background: var(--color-main);
     border: solid 0.3vw;
-    color: #fff;
-    background: #fff;
-    color: #000;
+    color: var(--color-bg);
+    background: var(--color-bg);
+    color: var(--color-main);
     cursor: pointer;
     font-family: Helvetica, sans-serif;
     font-size: 32px;
@@ -102,14 +106,30 @@ main button {
 }
 
 main button:hover {
-    background: #000;
-    color: #fff;
+    background: var(--color-main);
+    color: var(--color-bg);
 }
 
 /* DARK MODE */
 
-body.dark,
-body.dark main button{
-    background: #000;
-    color: #fff;
+body.dark { 
+    --color-bg: #000;
+    --color-main: #fff;
+}
+
+body.dark .icon{
+    background-color: rgb(170, 170, 30);
+    transform: translateX(85px);
+}
+
+body.dark .icon::after{
+    content: '';
+    background-color: #000;
+    display: block;
+    height: 60px;
+    width: 45px;
+    border-radius: 50%;
+    position: absolute;
+    left: -5px;
+    top: 0;
 }
