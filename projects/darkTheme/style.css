@@ -105,3 +105,11 @@ main button:hover {
     background: #000;
     color: #fff;
 }
+
+/* DARK MODE */
+
+body.dark,
+body.dark main button{
+    background: #000;
+    color: #fff;
+}
