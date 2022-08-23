@@ -1,5 +1,5 @@
 const switchButton = document.querySelector("header button");
-let theme = localStorage.getItem("theme") || "light";
+let theme = localStorage.getItem("theme");
 
 switchButton.addEventListener("click", () => {
     if (theme === "dark") {
@@ -17,4 +17,8 @@ switchButton.addEventListener("click", () => {
 
 if (theme === "dark") {
     document.querySelector("body").classList.add("dark");
+}
+
+if (theme === "light") {
+    document.querySelector("body").classList.add("light");
 }
