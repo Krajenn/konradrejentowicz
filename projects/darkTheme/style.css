@@ -110,6 +110,22 @@ main button:hover {
     color: var(--color-bg);
 }
 
+/* LIGHT MODE */
+
+body.light { 
+    --color-bg: #fff;
+    --color-main: #000;
+}
+
+body.light .icon{
+    background-color: grey;
+    transform: translateX(0);
+}
+
+body.light .icon::after{
+    content: none;
+}
+
 /* DARK MODE */
 
 body.dark { 
@@ -132,4 +148,28 @@ body.dark .icon::after{
     position: absolute;
     left: -5px;
     top: 0;
+}
+
+@media (prefers-color-scheme: dark){
+    body { 
+        --color-bg: #000;
+        --color-main: #fff;
+    }
+    
+    body .icon{
+        background-color: rgb(170, 170, 30);
+        transform: translateX(85px);
+    }
+    
+    body .icon::after{
+        content: '';
+        background-color: #000;
+        display: block;
+        height: 60px;
+        width: 45px;
+        border-radius: 50%;
+        position: absolute;
+        left: -5px;
+        top: 0;
+    }
 }
